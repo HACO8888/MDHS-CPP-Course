@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/haco/Code/C++/work 1-3 Xmas Tree",
+      "program": "/Users/haco/Code/C++/work 1-3 Xmas Tree/build/Debug/outDebug"
+    }
+  ]
+}
