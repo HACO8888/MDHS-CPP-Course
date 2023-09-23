@@ -25,11 +25,23 @@ using namespace std;
 
 int main()
 {
-  int num;
-  cout << RED << "請輸入一個座號：" << NC;
-  cin >> num;
+  int adultCount, childCount;
+  const int adultPrice = 499;
+  const int childPrice = 199;
 
-  cout << GREEN << "要上台的同學為：" << NC << num - 2 << ", " << num - 1 << ", " << num << ", " << num + 1 << ", " << num + 2 << endl;
+  cout << BLUE << "請輸入成人數量：" << NC;
+  cin >> adultCount;
+
+  cout << GREEN << "請輸入兒童數量：" << NC;
+  cin >> childCount;
+
+  cout << endl;
+
+  int totalCost = adultCount * adultPrice + childCount * childPrice;
+
+  cout << ROCKET << "成人票：" << adultCount << "張" << endl;
+  cout << ROCKET << "兒童票：" << childCount << "張" << endl;
+  cout << RED << "總票價為：" << NC << totalCost << "元" << endl;
 
   PAUSE;
   return 0;

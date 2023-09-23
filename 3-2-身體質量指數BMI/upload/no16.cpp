@@ -25,11 +25,17 @@ using namespace std;
 
 int main()
 {
-  int num;
-  cout << RED << "請輸入一個座號：" << NC;
-  cin >> num;
+  double height, weight;
 
-  cout << GREEN << "要上台的同學為：" << NC << num - 2 << ", " << num - 1 << ", " << num << ", " << num + 1 << ", " << num + 2 << endl;
+  cout << RED << "請輸入身高（公尺）：" << NC;
+  cin >> height;
+
+  cout << BLUE << "請輸入體重（公斤）：" << NC;
+  cin >> weight;
+
+  int bmi = weight / pow((height / 100), 2);
+
+  cout << GREEN << "身體質量指數（BMI）為：" << NC << bmi << endl;
 
   PAUSE;
   return 0;
