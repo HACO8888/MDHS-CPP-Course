@@ -32,6 +32,6 @@ cp "$folder_name/main.cpp" "$folder_name/upload/no16.cpp"
 g++ "$folder_name/upload/no16.cpp" -o "$folder_name/upload/no16"
 
 # Compile for Windows
-x86_64-w64-mingw32-g++ "$folder_name/upload/no16.cpp" -o "$folder_name/upload/no16.exe" -static-libgcc -static-libstdc++ -lwinpthread
+x86_64-w64-mingw32-g++ "$folder_name/upload/no16.cpp" -o "$folder_name/upload/no16.exe" -static-libgcc -static-libstdc++
 
 echo "Compilation completed successfully."
