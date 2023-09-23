@@ -36,6 +36,27 @@ int main()
     cout << setw(16) << left << dataTypes[i].name << "佔用 " << dataTypes[i].size << " Byte" << endl;
   }
 
+  cout << endl;
+
+  char a = 127;
+  cout << "a = " << (int)a << endl;
+  a++;
+  cout << setw(14) << "加一變成 " << (int)a << endl;
+
+  cout << endl;
+
+  short b = 32767;
+  cout << "b = " << b << endl;
+  b++;
+  cout << setw(14) << "加一變成 " << b << endl;
+
+  cout << endl;
+
+  int c = 2147483647;
+  cout << "c = " << c << endl;
+  c++;
+  cout << setw(14) << "加一變成 " << c << endl;
+
   PAUSE;
   return 0;
 }
